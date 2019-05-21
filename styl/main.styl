@@ -1,0 +1,52 @@
+@import "_common"
+
+body
+  background: radial-gradient(#e66465, #9198e5);
+  font-family "Comic Sans MS"
+  color: white
+  text-align center
+  animation: jump .3s linear
+  animation-iteration-count: infinite
+
+header
+  text-align left
+
+.text-after-logo
+  margin-left: 40px
+
+.logo
+  height: 80px
+  vertical-align: middle
+
+nav
+  text-align center
+  ul
+    list-style none
+    padding: 0
+
+.img-half
+  width: 50%
+
+.img-reverse
+  transform: scaleX(-1)
+
+img
+  height 400px
+
+@keyframes jump {
+  from {
+    color: black
+  }
+  25%: {
+    color: green;
+  }
+  50% {
+    color: yellow
+  }
+  75% {
+    color: red;
+  }
+  to {
+    color: white
+  }
+}

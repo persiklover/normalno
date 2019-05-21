@@ -1,0 +1,55 @@
+@import "_mixins"
+@import "_vars"
+@import "_fonts"
+
+/* Libs */
+@import "../lib/normalize/_normalize"
+
+*,
+*::before,
+*::after
+  box-sizing: border-box
+
+a,
+input,
+button
+  &:focus
+    outline: .1rem solid #5e9ed6
+
+a
+  color: inherit
+  text-decoration: none
+
+.visually-hidden
+  position: absolute
+  clip: rect(0 0 0 0)
+  width:  1px
+  height: 1px
+  overflow: hidden
+
+.container
+  max-width: 1180px
+  padding: 0 10px
+  margin: 0 auto
+
+  +lg()
+    max-width: 960px
+
+  +md()
+    max-width: 720px
+
+  +sm()
+    max-width: 95%
+
+  +xs()
+    padding: 0 7.5px
+    width: 100%
+
+html
+  font-size: 10px
+
+body
+  overflow-x: hidden
+  min-width: 320px
+  font-family 'Roboto', sans-serif;
+  font-size: 1.8rem
